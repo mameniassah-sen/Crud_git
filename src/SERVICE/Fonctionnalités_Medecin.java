@@ -40,13 +40,7 @@ public class Fonctionnalités_Medecin {
 		jb.connect();
 		String req="Update Medecin set nom= '"+m.getIdMed()+"', '"+m.getNom()+"', '"+m.getPrenom()+"', '"+m.getSpecialite()+"'";
 	}
-	public ResultSet connexion(String log, String password) {
-		ResultSet rs = null;
-		JDBC jb = new JDBC();
-		jb.connect();
-		String req = "SELECT  Login,Password FROM Medecin where Login='"+log+"' AND Password='"+password+"'";
-		return rs;
-}
+	
 	public void listeMedecin() {
 		JDBC jb = new JDBC();
 		jb.connect();
