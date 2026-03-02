@@ -1,16 +1,16 @@
 package MODELE;
 
-public class Medecin {
-	private int idMed;
+public class Patient {
+	private int idPat;
 	private String prenom ;
 	private String nom;
 	private String sexe; 
-	private String specialite;
-	public int getIdMed() {
-		return idMed;
+	private int age;
+	public int getIdPat() {
+		return idPat;
 	}
-	public void setIdMed(int idMed) {
-		this.idMed = idMed;
+	public void setIdPat(int idPat) {
+		this.idPat = idPat;
 	}
 	public String getPrenom() {
 		return prenom;
@@ -30,22 +30,23 @@ public class Medecin {
 	public void setSexe(String sexe) {
 		this.sexe = sexe;
 	}
-	public String getSpecialite() {
-		return specialite;
+	public int getAge() {
+		return age;
 	}
-	public void setSpecialite(String specialite) {
-		this.specialite = specialite;
+	public void setAge(int age) {
+		this.age = age;
 	}
-	public Medecin() {
+	
+	public Patient() {
 		super();
 	}
-	public Medecin(int idMed, String prenom, String nom, String sexe, String specialite) {
+	public Patient(int idPat, String prenom, String nom, String sexe, int age) {
 		super();
-		this.idMed = idMed;
+		this.idPat = idPat;
 		this.prenom = prenom;
 		this.nom = nom;
 		this.sexe = sexe;
-		this.specialite = specialite;
+		this.age = age;
 	}
 	
 
