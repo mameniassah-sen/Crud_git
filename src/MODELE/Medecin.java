@@ -36,6 +36,17 @@ public class Medecin {
 	public void setSpecialite(String specialite) {
 		this.specialite = specialite;
 	}
+	public Medecin() {
+		super();
+	}
+	public Medecin(int idMed, String prenom, String nom, String sexe, String specialite) {
+		super();
+		this.idMed = idMed;
+		this.prenom = prenom;
+		this.nom = nom;
+		this.sexe = sexe;
+		this.specialite = specialite;
+	}
 	
 
 }
